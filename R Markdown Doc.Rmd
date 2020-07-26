@@ -3,18 +3,23 @@ title: "First Report"
 author: "Amice Wong"
 date: "7/26/2020"
 #output: html_document
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## "command" + "option" + "i"
+# Summary of Pressure
 ```{r pressure summary}
+## "command" + "option" + "i"
 summary(pressure)
 ```
 
+```{r, echo=F}
+n <- nrow(mtcars)
+```
+Here `r n` cars are compared
 
 ```{r, echo = FALSE} 
 #echo False : not to show code
